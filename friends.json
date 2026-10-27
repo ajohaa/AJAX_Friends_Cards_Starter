@@ -1,2 +1,32 @@
 [
+  {
+    "name": "Rebecca",
+    "relationship": "Best Friend",
+    "detail": "Known since 1st grade",
+    "hobbies": ["Drawing", "Writing", "Music"]
+  },
+  {
+    "name": "Jordan",
+    "relationship": "unc",
+    "detail": "REALLY likes Harry Potter",
+    "hobbies": ["Gaming", "Sleeping", "TV"]
+  },
+  {
+    "name": "Kian",
+    "relationship": "i created him",
+    "detail": "cutaneous respiration",
+    "hobbies": ["Swimming", "Guitar", "Performing"]
+  },
+  {
+    "name": "Kavya",
+    "relationship": "the goat",
+    "detail": "is a kpop stan",
+    "hobbies": ["Coding", "Dance", "stray kids"]
+  },
+  {
+"name": "Nikita",
+"relationship": "my pookie wookie dookie",
+"detail": "unironically likes h20 just add water",
+"hobbies": ["shadow the hegnog", "physics", "space"]
+}
 ]

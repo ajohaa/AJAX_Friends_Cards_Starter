@@ -70,19 +70,19 @@ function renderFriends(friends) {
   // Use this supplied markup inside a template literal. Replace each
   // [PLACEHOLDER] with an expression that reads the current person.
   // Hobbies is an array: show it as readable, comma-separated text.
-  /*
-  <div class="col-12 col-md-6 col-lg-4">
-    <article class="card h-100">
-      <div class="card-body">
-        <h2 class="card-title h4">[NAME]</h2>
-        <p class="relationship">[RELATIONSHIP]</p>
-        <p>[DETAIL]</p>
-        <p class="hobbies"><strong>Hobbies:</strong> [HOBBIES]</p>
-      </div>
-    </article>
-  </div>
-  */
 
+  cardsContainer.innerHTML = friends.map(friend => `
+    <div class="col-12 col-md-6 col-lg-4">
+      <article class="card h-100">
+        <div class="card-body">
+          <h2 class="card-title h4">${friend.name}</h2>
+          <p class="relationship">${friend.relationship}</p>
+          <p>${friend.detail}</p>
+          <p class="hobbies"><strong>Hobbies:</strong> ${friend.hobbies.join(", ")}</p>
+        </div>
+      </article>
+    </div>
+  `).join("");
 
   // Supplied success message. Keep this after the cards are updated.
   statusMessage.classList.remove("error");

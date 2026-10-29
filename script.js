@@ -11,6 +11,7 @@ const statusMessage = document.getElementById("status");
 
 // CHECKPOINT 2: When the Load Friends button is clicked, run loadFriends.
 
+loadButton.addEventListener("click", loadFriends);
 
 // -------------------------------------------------------------
 // loadFriends: request the file, check the response, parse it.
@@ -28,19 +29,37 @@ function loadFriends() {
   //       other status  -> call showLoadError()
   //   - Connect onerror to showLoadError.
   //   - Send the request LAST, after the handlers are set up.
-  //
+
+  const request = new XMLHttpRequest();
+  request.open("GET", "friends.json", true);
+  request.onload = function () {
+    if (request.status === 200) {
+      try {
+        const friends = JSON.parse(request.responseText);
+        renderFriends(friends);
+      } catch (error) {
+        showDataError(error);
+      }
+    } else {
+      showLoadError();
+    }
+  };
+  request.onerror = showLoadError;
+  request.send();
+
   //   Supplied safety net: put your JSON.parse line and your
   //   renderFriends call inside a try block like this one, so a
   //   typo in friends.json shows a message instead of a blank page.
-  //
-  //     try {
-  //       // parse the response text and call renderFriends here
-  //     } catch (error) {
-  //       showDataError(error);
-  //     }
+
+  try {
+    const friends = JSON.parse(request.responseText);
+    renderFriends(friends);
+  } catch (error) {
+    showDataError(error);
+  }
+
 
 }
-
 
 // -------------------------------------------------------------
 // renderFriends: turn the array into cards on the page.

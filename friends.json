@@ -1,32 +1,32 @@
 [
   {
     "name": "Rebecca",
-    "relationship": "Best Friend",
+    "relationship": "best friend",
     "detail": "Known since 1st grade",
-    "hobbies": ["Drawing", "Writing", "Music"]
+    "hobbies": ["drawing", "writing", "theatre"]
   },
   {
     "name": "Jordan",
-    "relationship": "unc",
-    "detail": "REALLY likes Harry Potter",
-    "hobbies": ["Gaming", "Sleeping", "TV"]
+    "relationship": "college unc",
+    "detail": "REALLY likes harry potter",
+    "hobbies": ["gaming", "sleeping", "watching tv"]
   },
   {
     "name": "Kian",
-    "relationship": "i created him",
-    "detail": "cutaneous respiration",
-    "hobbies": ["Swimming", "Guitar", "Performing"]
+    "relationship": "fish boy",
+    "detail": "i created him and it took like 5 hours",
+    "hobbies": ["swimming", "guitar", "performing"]
   },
   {
     "name": "Kavya",
     "relationship": "the goat",
     "detail": "is a kpop stan",
-    "hobbies": ["Coding", "Dance", "stray kids"]
+    "hobbies": ["coding", "dance", "stray kids"]
   },
   {
 "name": "Nikita",
 "relationship": "my pookie wookie dookie",
 "detail": "unironically likes h20 just add water",
-"hobbies": ["shadow the hegnog", "physics", "space"]
+"hobbies": ["music", "physics", "space"]
 }
 ]
